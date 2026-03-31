@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 240 10% 2%; /* Hampir hitam sempurna */
+    --foreground: 0 0% 98%; /* Putih murni */
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+:target {
+  scroll-margin-top: 80px;
+}
+
+body {
+  @apply bg-background text-foreground;
+  scroll-behavior: smooth;
+  font-feature-settings:
+    "rlig" 1,
+    "calt" 1;
+}
+
+[data-aos] {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+[data-aos].aos-animate {
+  pointer-events: auto;
+  visibility: visible;
+}
