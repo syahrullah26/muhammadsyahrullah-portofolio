@@ -302,7 +302,7 @@ export default function PortfolioPage() {
           >
             <div className="relative w-full max-w-[350px] aspect-square bg-gradient-to-tr from-emerald-500 to-blue-500 rounded-2xl rotate-3 group-hover:rotate-0 transition-transform duration-500 overflow-hidden shadow-2xl">
               <img
-                src="https://via.placeholder.com/500"
+                src="/ms.jpg"
                 alt="Muhammad Syahrullah"
                 className="object-cover w-full h-full opacity-90 grayscale group-hover:grayscale-0 transition-all duration-700"
               />
