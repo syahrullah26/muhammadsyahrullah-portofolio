@@ -62,7 +62,7 @@ export const Footer = () => {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
               ),
-              href: "https://www.linkedin.com/in/username-kamu", // Ganti dengan link kamu
+              href: "https://www.linkedin.com/in/muhammad-syahrullah-0317b729a/",
               label: "LinkedIn",
             },
             {
