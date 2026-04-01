@@ -1,7 +1,13 @@
-"use client";
-
 import React from "react";
 import { Footer } from "@/components/footer";
+import { GitHubActivity } from "@/components/githubCalendar";
+import { GithubStats } from "@/components/githubStats";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Muhammad Syahrullah | Web Developer",
+  description: "Portofolio Muhammad Syahrullah.",
+};
 
 const projects = [
   {
@@ -233,7 +239,7 @@ export default function PortfolioPage() {
           data-aos-delay="200"
           className="max-w-2xl text-lg md:text-xl text-slate-400 mb-10 leading-relaxed"
         >
-          Seseorang yang sangat tertarik menjadi Web Developer.
+          Web Developer.
         </p>
         <div data-aos="fade-up" data-aos-delay="400" className="flex gap-4">
           <a
@@ -334,15 +340,31 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+      <section className="py-16 px-6 max-w-5xl mx-auto">
+        <div>
+          <h2 className="text-3xl font-bold mb-4 italic text-white">
+            / Github Activity
+          </h2>
+          <div className="h-1 w-12 bg-emerald-500 rounded-full mb-6"></div>{" "}
+        </div>
+        <div className="space-y-6  border border-emerald-500/30 rounded-3xl p-6 bg-slate-800/20">
+          <div className="overflow-hidden p-6 bg-slate-900/40 rounded-3xl">
+            <GitHubActivity />
+          </div>
+          <div className="space-y-6 overflow-hidden p-6 bg-slate-900/40 borderrounded-3xl">
+            <GithubStats />
+          </div>
+        </div>
+      </section>
 
       <section id="projects" className="py-24 px-6 bg-slate-800/30">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex justify-between items-end mb-12">
-            <h2 data-aos="fade-right" className="text-4xl font-bold">
-              Featured Projects
+        <div className="max-w-5xl mx-auto">
+          <div>
+            <h2 className="text-3xl font-bold mb-4 italic text-white">
+              / Featured Projects
             </h2>
+            <div className="h-1 w-12 bg-emerald-500 rounded-full mb-6"></div>{" "}
           </div>
-
           <div className="grid md:grid-cols-4 gap-8">
             {projects.map((project, index) => (
               <a

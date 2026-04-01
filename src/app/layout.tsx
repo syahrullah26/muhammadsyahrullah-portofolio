@@ -1,9 +1,10 @@
-"use client"; // Tambahkan ini di baris paling atas
+"use client";
 
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./globals.css";
+
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
