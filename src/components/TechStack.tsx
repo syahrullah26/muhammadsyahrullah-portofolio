@@ -28,7 +28,7 @@ export const TechStack = () => {
           Tech Stack
         </h3>
       </div>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-6 p-8 bg-slate-900 rounded-3xl border border-slate-800">
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-6 p-8 bg-slate-900 rounded-3xl border border-emerald-500/30">
         {skills.map((skill, index) => (
           <div
             key={skill.id}

@@ -65,9 +65,6 @@ export const GithubStats = () => {
             data-aos="zoom-in"
             data-aos-delay="100"
           >
-            <div className="absolute top-2 left-4 text-[10px] text-slate-500 uppercase tracking-widest font-bold">
-              Commits
-            </div>
             <img
               src={langUrl}
               alt="Most Commit Languages"
@@ -81,9 +78,6 @@ export const GithubStats = () => {
             data-aos="zoom-in"
             data-aos-delay="200"
           >
-            <div className="absolute top-2 left-4 text-[10px] text-slate-500 uppercase tracking-widest font-bold">
-              Repositories
-            </div>
             <img
               src={langByRepoUrl}
               alt="Most Repo Languages"
@@ -97,9 +91,6 @@ export const GithubStats = () => {
             data-aos="zoom-in"
             data-aos-delay="300"
           >
-            <div className="absolute top-2 left-4 text-[10px] text-slate-500 uppercase tracking-widest font-bold">
-              General Stats
-            </div>
             <img
               src={stats2Url}
               alt="Stats GitHub 2"
