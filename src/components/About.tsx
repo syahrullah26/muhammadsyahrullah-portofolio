@@ -53,7 +53,7 @@ export const About = () => {
 
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="group relative inline-flex items-center justify-center gap-2 text-sm uppercase tracking-widest font-bold bg-emerald-500 text-slate-900 py-4 px-8 border border-emerald-500/30 rounded-xl hover:bg-slate-800/20 hover:text-emerald-400 transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(16,185,129,0.4)]"
+                className="group relative inline-flex items-center justify-center gap-2 text-sm uppercase tracking-widest font-bold bg-emerald-500 text-slate-900 py-4 px-8 border border-emerald-500/30 rounded-xl hover:bg-slate-800/20 hover:text-emerald-400 transition-all duration-300 hover:shadow-[0_0_20px_-5px_rgba(16,185,129,0.4)] cursor-pointer"
               >
                 <span>View Career</span>
                 <svg
