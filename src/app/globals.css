@@ -30,8 +30,75 @@ body {
 
 @layer base {
   :root {
-    --background: 240 10% 2%; /* Hampir hitam sempurna */
-    --foreground: 0 0% 98%; /* Putih murni */
+    --background: 240 10% 2%;
+    --foreground: 0 0% 98%;
+  }
+}
+
+@layer utilities {
+  .text-3d-luxury {
+    text-shadow:
+      1px 1px 0px #065f46,
+      2px 2px 0px #065f46,
+      3px 3px 0px #065f46,
+      4px 4px 20px rgba(0, 0, 0, 0.5);
+  }
+}
+@layer utilities {
+  .text-3d-deep {
+    text-shadow:
+      0 1px 0 #059669,
+      0 2px 0 #059669,
+      0 3px 0 #059669,
+      0 4px 0 #059669,
+      0 5px 0 #059669,
+      0 6px 1px rgba(0, 0, 0, 0.1),
+      0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3),
+      0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .animate-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@layer utilities {
+  .text-3d-emerald {
+    text-shadow:
+      0 1px 0 #065f46,
+      0 2px 0 #065f46,
+      0 3px 0 #065f46,
+      0 4px 0 #065f46,
+      0 5px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .animate-float-slow {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+    }
   }
 }
 html {
