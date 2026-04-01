@@ -12,8 +12,7 @@ export const Footer = () => {
         </h2>
 
         <p className="text-slate-400 text-lg mb-10 max-w-lg mx-auto">
-          Saya selalu terbuka untuk diskusi proyek baru, kolaborasi, atau
-          sekadar berbagi ide kreatif.
+          Saya selalu terbuka untuk diskusi Project baru maupun bersapa ria.
         </p>
 
         <div className="flex justify-center mb-12">
