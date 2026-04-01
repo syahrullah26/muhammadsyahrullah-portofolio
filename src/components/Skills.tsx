@@ -17,6 +17,7 @@ export const TechStack = ({ skills }: { skills: Skill[] }) => {
           {skills.map((skill, index) => (
             <div
               key={index}
+              
               className="flex items-center gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-800/80 transition-all duration-300 group"
             >
               <div className="flex-shrink-0 w-8 h-8 flex items-center justify-center transition-transform group-hover:scale-110">
