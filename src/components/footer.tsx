@@ -1,7 +1,23 @@
+"use client";
+
+import React from "react";
 import * as Icons from "lucide-react";
 import { SVGProps } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export const Footer = () => {
+  const { language } = useLanguage();
+  const content =
+    language === "en"
+      ? {
+          Description:
+            "I'm always open to discussing new projects or just saying hi.",
+        }
+      : {
+          Description:
+            "Saya selalu terbuka untuk diskusi Project baru maupun bersapa ria.",
+        };
+
   return (
     <footer id="contact" className="relative py-24 px-6 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"></div>
@@ -12,7 +28,7 @@ export const Footer = () => {
         </h2>
 
         <p className="text-slate-400 text-lg mb-10 max-w-lg mx-auto">
-          Saya selalu terbuka untuk diskusi Project baru maupun bersapa ria.
+          {content.Description}
         </p>
 
         <div className="flex justify-center mb-12">

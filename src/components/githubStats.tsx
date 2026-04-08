@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { GitGraph, BarChart3, Code2, Flame } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export const GithubStats = () => {
   const username = "syahrullah26";
@@ -14,6 +15,16 @@ export const GithubStats = () => {
   const langUrl = `https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${username}&${themeParams}`;
   const langByRepoUrl = `https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${username}&${themeParams}`;
 
+  const { language } = useLanguage();
+  const content =
+    language === "en"
+      ? {
+          title: "My GitHub Contribution",
+        }
+      : {
+          title: "Kontribusi GitHub Saya",
+        };
+
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto" id="github">
       <div
@@ -22,7 +33,7 @@ export const GithubStats = () => {
       >
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-4">
           <GitGraph size={18} />
-          <span>My GitHub Contribution</span>
+          <span>{content.title}</span>
         </div>
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
           Github <span className="text-emerald-400">Statistics</span>

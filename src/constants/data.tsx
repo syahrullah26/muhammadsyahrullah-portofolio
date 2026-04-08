@@ -14,43 +14,83 @@ export interface Skill {
   icon: React.ReactNode;
 }
 
-export const projects: Project[] = [
-  {
-    id: 1,
-    title: "Dewa United Store Redesign",
-    description:
-      "Membangun ulang UI dari Dewa United Store untuk meningkatkan pengalaman pengguna.",
-    tech: ["Nuxt.js", "Tailwind", "Laravel"],
-    image: "projects/du-store-redesign.png",
-    link: "https://dewaunitedstore.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Project Manager Dashboard",
-    description:
-      "Dashboard interaktif untuk mengelola dan mentracking project dengan efisiensi tinggi.",
-    tech: ["Vue.Js", "TypeScript", "Laravel"],
-    image: "projects/pms-dashboard.png",
-    link: "https://github.com/syahrullah26/project-management-system",
-  },
-  {
-    id: 3,
-    title: "Dewa United Overtime",
-    description: "Aplikasi pencatatan overtime karyawan Dewa United.",
-    tech: ["Nuxt.js", "MySQL", "Laravel"],
-    image: "projects/du-overtime.png",
-    link: "https://github.com/syahrullah26/du-overtime",
-  },
-  {
-    id: 4,
-    title: "GPM Finance & Sales Dashboard",
-    description:
-      "Aplikasi pencatatan pengeluaran dan pemasukan dari PT.Gangsar Purnama Mandiri.",
-    tech: ["PHP", "Bootstrap", "MySQL", "JavaScript"],
-    image: "projects/gpm.png",
-    link: "https://github.com/syahrullah26/GPM-Sales-Finance-System",
-  },
-];
+export const ProjectsData = {
+  en: [
+    {
+      id: 1,
+      title: "Dewa United Store Redesign",
+      description:
+        "Create a complete UI redesign for Dewa United Store to enhance user experience and drive sales.",
+      tech: ["Nuxt.js", "Tailwind", "Laravel"],
+      image: "projects/du-store-redesign.png",
+      link: "https://dewaunitedstore.vercel.app/",
+    },
+    {
+      id: 2,
+      title: "Project Manager Dashboard",
+      description:
+        "An interactive dashboard for managing and tracking projects with high efficiency.",
+      tech: ["Vue.Js", "TypeScript", "Laravel"],
+      image: "projects/pms-dashboard.png",
+      link: "https://github.com/syahrullah26/project-management-system",
+    },
+    {
+      id: 3,
+      title: "Dewa United Overtime",
+      description:
+        "An application for recording employee overtime at Dewa United.",
+      tech: ["Nuxt.js", "MySQL", "Laravel"],
+      image: "projects/du-overtime.png",
+      link: "https://github.com/syahrullah26/du-overtime",
+    },
+    {
+      id: 4,
+      title: "GPM Finance & Sales Dashboard",
+      description:
+        "An interactive dashboard for managing and tracking projects with high efficiency.",
+      tech: ["PHP", "Bootstrap", "MySQL", "JavaScript"],
+      image: "projects/gpm.png",
+      link: "https://github.com/syahrullah26/gpm-finance-sales-dashboard",
+    },
+  ],
+  id: [
+    {
+      id: 1,
+      title: "Dewa United Store Redesign",
+      description:
+        "Membangun ulang UI dari Dewa United Store untuk meningkatkan pengalaman pengguna.",
+      tech: ["Nuxt.js", "Tailwind", "Laravel"],
+      image: "projects/du-store-redesign.png",
+      link: "https://dewaunitedstore.vercel.app/",
+    },
+    {
+      id: 2,
+      title: "Project Manager Dashboard",
+      description:
+        "Dashboard interaktif untuk mengelola dan mentracking project dengan efisiensi tinggi.",
+      tech: ["Vue.Js", "TypeScript", "Laravel"],
+      image: "projects/pms-dashboard.png",
+      link: "https://github.com/syahrullah26/project-management-system",
+    },
+    {
+      id: 3,
+      title: "Dewa United Overtime",
+      description: "Aplikasi pencatatan overtime karyawan Dewa United.",
+      tech: ["Nuxt.js", "MySQL", "Laravel"],
+      image: "projects/du-overtime.png",
+      link: "https://github.com/syahrullah26/du-overtime",
+    },
+    {
+      id: 4,
+      title: "GPM Finance & Sales Dashboard",
+      description:
+        "Aplikasi pencatatan pengeluaran dan pemasukan dari PT.Gangsar Purnama Mandiri.",
+      tech: ["PHP", "Bootstrap", "MySQL", "JavaScript"],
+      image: "projects/gpm.png",
+      link: "https://github.com/syahrullah26/GPM-Sales-Finance-System",
+    },
+  ],
+};
 
 export const skills: Skill[] = [
   {

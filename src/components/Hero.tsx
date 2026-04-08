@@ -3,8 +3,26 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import { LangSwitcher } from "./LangSwitcher";
+import { useLanguage } from "@/context/LanguageContext";
 
 export const Hero = () => {
+  const { language } = useLanguage();
+  const content =
+    language === "en"
+      ? {
+          available: "Available for New Projects",
+          hi: "Hi, I'm",
+          contactBtn: "Contact Me",
+          projectBtn: "View Projects",
+        }
+      : {
+          available: "Tersedia untuk Proyek Baru",
+          hi: "Hai, Saya",
+          contactBtn: "Kontak Saya",
+          projectBtn: "Lihat Proyek",
+        };
+
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center px-4 md:px-6 text-center overflow-hidden bg-slate-950">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] h-[600px] bg-emerald-500/10 blur-[120px] rounded-full -z-10 animate-pulse"></div>
@@ -18,7 +36,7 @@ export const Hero = () => {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
         </span>
-        Available for New Projects
+        {content.available}
       </motion.div>
       <div
         className="relative z-10 mb-6"
@@ -26,7 +44,7 @@ export const Hero = () => {
         data-aos-duration="1000"
       >
         <span className="block text-slate-500 text-lg md:text-2xl font-light tracking-[0.3em] uppercase mb-2">
-          Hi, I'm
+          {content.hi}
         </span>
         <h3 className="text-6xl md:text-8xl lg:text-[5rem] font-black tracking-tighter text-emerald-400 leading-[0.9] select-none">
           Muhammad Syahrullah
@@ -62,15 +80,16 @@ export const Hero = () => {
           href="#projects"
           className="group relative px-10 py-4 bg-emerald-500 text-slate-950 font-bold rounded-xl transition-all hover:scale-105 shadow-[0_8px_0_rgb(5,150,105)] active:shadow-none active:translate-y-2 text-center"
         >
-          Lihat Proyek
+          {content.projectBtn}
         </a>
         <a
           href="#contact"
           className="px-10 py-4 border border-emerald-500/30 text-emerald-400 font-bold rounded-xl hover:bg-emerald-500/10 transition-all backdrop-blur-sm text-center"
         >
-          Kontak Saya
+          {content.contactBtn}
         </a>
       </div>
+      <LangSwitcher />
       <div className="absolute bottom-0 w-full h-[1px] bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent"></div>
     </section>
   );

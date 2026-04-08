@@ -1,13 +1,24 @@
+"use client";
 import React from "react";
 import { GitHubActivity } from "@/components/githubCalendar";
 import { GithubStats } from "@/components/githubStats";
+import { useLanguage } from "@/context/LanguageContext";
 
 export const GithubSection = () => {
+  const { language } = useLanguage();
+  const content =
+    language === "en"
+      ? {
+          title: "Gihtub Activity",
+        }
+      : {
+          title: "Aktivitas GIthub",
+        };
   return (
     <section className="py-16 px-6 max-w-5xl mx-auto">
       <div>
         <h2 className="text-3xl font-bold mb-4 italic text-white">
-          / Github Activity
+          / {content.title}
         </h2>
         <div className="h-1 w-12 bg-emerald-500 rounded-full mb-6"></div>
       </div>

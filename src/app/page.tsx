@@ -7,7 +7,6 @@ import { About } from "@/components/About";
 import { TechStack } from "@/components/TechStack";
 import { GithubSection } from "@/components/GithubSection";
 import { Projects } from "@/components/Projects";
-import { projects, skills } from "@/constants/data";
 
 export const metadata: Metadata = {
   title: "Muhammad Syahrullah | Web Developer",
@@ -21,7 +20,7 @@ export default function PortfolioPage() {
       <About />
       <TechStack />
       <GithubSection />
-      <Projects projects={projects} />
+      <Projects />
       <Footer />
     </main>
   );

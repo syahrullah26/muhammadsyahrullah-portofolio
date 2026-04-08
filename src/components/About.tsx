@@ -2,10 +2,11 @@
 
 import React, { useState } from "react";
 import CareerModal from "./CareerModal";
+import { useLanguage } from "@/context/LanguageContext";
 
 export const About = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const { language } = useLanguage();
   const content =
     language === "en"
       ? {
@@ -28,21 +29,6 @@ export const About = () => {
       id="about"
       className="relative py-24 px-6 max-w-5xl mx-auto rounded-3xl bg-slate-800/20 border border-slate-700/30"
     >
-      <div className="absolute top-6 right-6 flex gap-2 z-10">
-        <button
-          onClick={() => setLanguage("en")}
-          className={`text-xs font-bold px-2 py-1 rounded ${language === "en" ? "bg-emerald-500 text-slate-900" : "text-slate-500 hover:text-emerald-400"}`}
-        >
-          EN
-        </button>
-        <button
-          onClick={() => setLanguage("id")}
-          className={`text-xs font-bold px-2 py-1 rounded ${language === "id" ? "bg-emerald-500 text-slate-900" : "text-slate-500 hover:text-emerald-400"}`}
-        >
-          ID
-        </button>
-      </div>
-
       <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div data-aos="fade-right" className="space-y-6">
           <div>

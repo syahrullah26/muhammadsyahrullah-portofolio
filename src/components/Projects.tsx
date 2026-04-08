@@ -1,21 +1,21 @@
+"use client";
 import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
+import { ProjectsData } from "@/constants/data";
 
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  tech: string[];
-  image: string;
-  link: string;
-}
-
-export const Projects = ({ projects }: { projects: Project[] }) => {
+export const Projects = () => {
+  const { language } = useLanguage();
+  const projects = ProjectsData[language as keyof typeof ProjectsData];
+  const content =
+    language === "en"
+      ? { title: "Featured Projects" }
+      : { title: "Proyek Unggulan" };
   return (
     <section id="projects" className="py-24 px-6 bg-slate-800/30">
       <div className="max-w-5xl mx-auto">
         <div>
           <h2 className="text-3xl font-bold mb-4 italic text-white">
-            / Featured Projects
+            / {content.title}
           </h2>
           <div className="h-1 w-12 bg-emerald-500 rounded-full mb-6"></div>
         </div>
