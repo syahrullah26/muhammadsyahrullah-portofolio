@@ -46,8 +46,7 @@ export const ProjectsData = {
     {
       id: 4,
       title: "GPM Finance & Sales Dashboard",
-      description:
-        "An interactive dashboard for managing and tracking projects with high efficiency.",
+      description: "An Application for recording sales and finance at PT.GPM.",
       tech: ["PHP", "Bootstrap", "MySQL", "JavaScript"],
       image: "projects/gpm.png",
       link: "https://github.com/syahrullah26/gpm-finance-sales-dashboard",
