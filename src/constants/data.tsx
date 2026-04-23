@@ -51,6 +51,15 @@ export const ProjectsData = {
       image: "projects/gpm.png",
       link: "https://github.com/syahrullah26/gpm-finance-sales-dashboard",
     },
+    {
+      id: 5,
+      title: "ScanStock",
+      description:
+        "An Mobile application for recording sales and inventory with scan barcode feature using Flutter and Laravel.",
+      tech: ["Flutter", "Laravel", "MySQL", "Dart"],
+      image: "projects/scanstock.png",
+      link: "https://github.com/syahrullah26/ScanStock",
+    },
   ],
   id: [
     {
@@ -87,6 +96,15 @@ export const ProjectsData = {
       tech: ["PHP", "Bootstrap", "MySQL", "JavaScript"],
       image: "projects/gpm.png",
       link: "https://github.com/syahrullah26/GPM-Sales-Finance-System",
+    },
+    {
+      id: 5,
+      title: "ScanStock",
+      description:
+        "Aplikasi manage stock dan transaksi berbasis mobile dengan fitur scan barcode menggunakan Flutter dan Laravel.",
+      tech: ["Flutter", "Laravel", "MySQL", "Dart"],
+      image: "projects/scanstock.png",
+      link: "https://github.com/syahrullah26/ScanStock",
     },
   ],
 };

@@ -89,7 +89,6 @@ export const Hero = () => {
           {content.contactBtn}
         </a>
       </div>
-      <LangSwitcher />
       <div className="absolute bottom-0 w-full h-[1px] bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent"></div>
     </section>
   );
